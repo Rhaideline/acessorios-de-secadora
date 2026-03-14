@@ -9,9 +9,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'lencos-aromatizados-secadora-120',
     description:
       'Lenços aromatizados para secadora importados. Amaciante de tecidos em folha que elimina a eletricidade estática, amacia as roupas e deixa um aroma suave e duradouro. Cada folha pode ser reutilizada até 3 vezes. Fórmula hipoalergênica, segura para crianças e pets. Embalagem com 120 folhas de alta qualidade.',
-    price: 8990,
-    compareAtPrice: 12990,
-    discount: 31,
+    price: 18990,
+    compareAtPrice: 24990,
+    discount: 24,
     images: [
       { url: 'https://ae01.alicdn.com/kf/S5556677f7af743689143a822efc1e82ev.jpg', alt: 'Lenços Aromatizados para Secadora 120 Folhas' },
       { url: 'https://ae01.alicdn.com/kf/S8a98e94679d14d929688cdd69c4d9f46C.jpg', alt: 'Lenços para Secadora - uso' },
@@ -35,13 +35,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
   {
     id: '2',
     ghlProductId: '69b5d22c6601ec31533861c2',
-    name: 'Bolas de Lã Orgânica para Secadora — Kit 3un XL',
-    slug: 'bolas-la-organica-secadora-kit-3',
+    name: 'Bolas de Lã Orgânica para Secadora — Kit 6un XL',
+    slug: 'bolas-la-organica-secadora-kit-6',
     description:
-      'Bolas de lã orgânica XL de 7cm importadas. Amaciante de tecido natural e reutilizável que reduz o tempo de secagem em até 25%, elimina a necessidade de lenços descartáveis e dura mais de 1.000 ciclos. Ecológicas, sem químicos e 100% naturais. Adicione 2–3 gotas de óleo essencial para perfumar naturalmente suas roupas. Kit com 3 unidades.',
-    price: 5990,
-    compareAtPrice: 8990,
-    discount: 33,
+      'Bolas de lã orgânica XL de 7cm importadas. Amaciante de tecido natural e reutilizável que reduz o tempo de secagem em até 25%, elimina a necessidade de lenços descartáveis e dura mais de 1.000 ciclos. Ecológicas, sem químicos e 100% naturais. Adicione 2–3 gotas de óleo essencial para perfumar naturalmente suas roupas. Kit com 6 unidades.',
+    price: 12000,
+    compareAtPrice: 15990,
+    discount: 25,
     images: [
       { url: 'https://ae01.alicdn.com/kf/Sdf24634297dc45feb45a0e067ec7295dA.jpg', alt: 'Bolas de Lã Orgânica para Secadora Kit 3un' },
       { url: 'https://ae01.alicdn.com/kf/S02902ebc961a47f5b2d1d0e8f572549dp.jpg', alt: 'Bolas de Lã - detalhes' },
@@ -69,9 +69,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'lencos-secadora-sem-perfume-120',
     description:
       'Para peles sensíveis. Amaciante sem fragrância, sem corantes artificiais e sem alérgenos. Dermatologicamente testado. Ideal para bebês, gestantes e pessoas com alergias. Elimina a eletricidade estática sem adicionar perfume.',
-    price: 6490,
-    compareAtPrice: 8990,
-    discount: 28,
+    price: 18990,
+    compareAtPrice: 24990,
+    discount: 24,
     images: [
       { url: 'https://ae01.alicdn.com/kf/S3f63326291894788b2389c80acbea051a.jpg', alt: 'Lenços Sem Perfume para Secadora' },
       { url: 'https://ae01.alicdn.com/kf/S5556677f7af743689143a822efc1e82ev.jpg', alt: 'Lenços Sem Perfume - detalhes' },
@@ -148,9 +148,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'lencos-secadora-lavanda-80',
     description:
       'Lenços premium com aroma de lavanda francesa importada. Amaciante, antiestático e perfumado em um único produto. Embalagem reutilizável.',
-    price: 4990,
-    compareAtPrice: 6990,
-    discount: 29,
+    price: 5990,
+    compareAtPrice: 7990,
+    discount: 25,
     images: [
       { url: 'https://ae01.alicdn.com/kf/Sf4ff5c8364334d04a5e1e17d20c7c48f9.jpg', alt: 'Lenços Secadora Lavanda Premium' },
       { url: 'https://ae01.alicdn.com/kf/S844255cf3b1545e79194eaf8d25d07b5T.jpg', alt: 'Lenços Lavanda - detalhes' },
@@ -174,9 +174,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'lencos-amaciantes-ultra-macios-120',
     description:
       'Lenços amaciantes ultra macios para secadora com perfume fresco e duradouro. Antiestáticos de alta performance que deixam suas roupas incrivelmente macias e perfumadas. Fórmula importada de última geração que reduz rugas, elimina estática e facilita o desamassar. Embalagem econômica com 120 folhas.',
-    price: 3990,
-    compareAtPrice: 5990,
-    discount: 33,
+    price: 18990,
+    compareAtPrice: 24990,
+    discount: 24,
     images: [
       { url: 'https://ae01.alicdn.com/kf/S3687a1e3d9074d5796be1dc14efebe83l.jpg', alt: 'Lenços Amaciantes Ultra Macios 120 Folhas' },
       { url: 'https://ae01.alicdn.com/kf/S4f3f91c10e49417e87fa4c802186b638j.jpg', alt: 'Lenços Ultra Macios - detalhes' },
@@ -204,9 +204,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'lencos-antiestaticos-secadora-40-160',
     description:
       'Lenços amaciantes antiestáticos importados para secadora de roupas. Eliminam a eletricidade estática, reduzem rugas e deixam as roupas macias e perfumadas. Fórmula suave que não agride tecidos delicados. Disponível em embalagens de 40, 80 e 160 folhas para atender todas as necessidades.',
-    price: 4490,
-    compareAtPrice: 6990,
-    discount: 36,
+    price: 5990,
+    compareAtPrice: 7990,
+    discount: 25,
     images: [
       { url: 'https://ae01.alicdn.com/kf/Sebbedf1bf19e42658d7ef2c0f58b24e4d.jpg', alt: 'Lenços Antiestáticos para Secadora' },
       { url: 'https://ae01.alicdn.com/kf/S73d3fd54aeae4ba2a7e4ff28cf9a1d48D.jpg', alt: 'Lenços Antiestáticos - detalhes' },
@@ -293,9 +293,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'capsulas-lavanderia-perfumadas-rosas',
     description:
       'Cápsulas de lavanderia com fragrância de rosas importadas. Fórmula concentrada que limpa profundamente, perfuma e amacia em um único produto. Basta colocar uma cápsula diretamente no tambor da máquina antes de adicionar as roupas. Dissolve completamente em água fria ou quente. Embalagem prática e segura.',
-    price: 5990,
-    compareAtPrice: 8990,
-    discount: 33,
+    price: 16990,
+    compareAtPrice: 21990,
+    discount: 23,
     images: [
       { url: 'https://ae01.alicdn.com/kf/S1d80e560fc9f48828a3b5c7d9e1f3a5bV.jpg', alt: 'Cápsulas de Lavanderia Perfumadas' },
       { url: 'https://ae01.alicdn.com/kf/S3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3bX.jpg', alt: 'Cápsulas Rosas - detalhes' },
@@ -323,9 +323,9 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     slug: 'capsulas-limpeza-5-em-1-maquina-lavar',
     description:
       'Cápsulas de limpeza 5 em 1 para máquina de lavar com 50 unidades. Fórmula concentrada que limpa, desinfeta, remove manchas, perfuma e amacia em uma única cápsula. Tecnologia de dissolução rápida que funciona em água fria e quente. Prática, econômica e muito eficiente. Embalagem com 50 cápsulas para até 50 lavagens.',
-    price: 6990,
-    compareAtPrice: 9990,
-    discount: 30,
+    price: 16990,
+    compareAtPrice: 21990,
+    discount: 23,
     images: [
       { url: 'https://ae01.alicdn.com/kf/Sa44f13cc16da4e088a2b4c6d8e0f2a4bD.jpg', alt: 'Cápsulas 5 em 1 para Máquina de Lavar' },
       { url: 'https://ae01.alicdn.com/kf/S6b8c0d2e4f6a8b0c2d4e6f8a0b2c4d6eE.jpg', alt: 'Cápsulas 5 em 1 - detalhes' },
