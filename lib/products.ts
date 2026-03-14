@@ -153,6 +153,34 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
+  {
+    id: '7',
+    name: 'Lenços Amaciantes Ultra Macios para Secadora — 120 Folhas Perfume Fresco',
+    slug: 'lencos-amaciantes-ultra-macios-120',
+    description:
+      'Lenços amaciantes ultra macios para secadora com perfume fresco e duradouro. Antiestáticos de alta performance que deixam suas roupas incrivelmente macias e perfumadas. Fórmula importada de última geração que reduz rugas, elimina estática e facilita o desamassar. Embalagem econômica com 120 folhas.',
+    price: 3990,
+    compareAtPrice: 5990,
+    discount: 33,
+    images: [
+      { url: 'https://ae01.alicdn.com/kf/S3687a1e3d9074d5796be1dc14efebe83l.jpg', alt: 'Lenços Amaciantes Ultra Macios 120 Folhas' },
+      { url: 'https://ae01.alicdn.com/kf/S4f3f91c10e49417e87fa4c802186b638j.jpg', alt: 'Lenços Ultra Macios - detalhes' },
+      { url: 'https://ae01.alicdn.com/kf/S36016faac9774c5da28cfd44ce651621c.jpg', alt: 'Lenços Ultra Macios - embalagem' },
+      { url: 'https://ae01.alicdn.com/kf/Sfb107beede884524a4ecd0b4d5e676dcy.jpg', alt: 'Lenços Ultra Macios - uso' },
+      { url: 'https://ae01.alicdn.com/kf/Sae74f1f565744a3a88c0c666de0eb347x.jpg', alt: 'Lenços Ultra Macios - resultado' },
+      { url: 'https://ae01.alicdn.com/kf/S8e6e439a0f714e5bab4ad99d23c32597A.jpg', alt: 'Lenços Ultra Macios - aroma' },
+    ],
+    tags: ['lenco-secadora', 'importado', 'ultra-macio', 'bestseller'],
+    sku: 'LEN-UM-120',
+    inventory: 60,
+    isActive: true,
+    category: 'Lenços para Secadora',
+    isBestseller: true,
+    isNew: true,
+    isOnSale: true,
+    createdAt: '2025-01-01',
+    updatedAt: '2025-01-01',
+  },
 ]
 
 export const CATEGORIES: Category[] = [
