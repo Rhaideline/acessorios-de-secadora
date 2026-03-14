@@ -57,6 +57,7 @@ export default function Footer() {
               <li><Link href="/categorias/lencos-para-secadora" className="hover:text-teal transition-colors">Lenços para Secadora</Link></li>
               <li><Link href="/categorias/bolas-de-la" className="hover:text-teal transition-colors">Bolas de Lã</Link></li>
               <li><Link href="/categorias/kits-completos" className="hover:text-teal transition-colors">Kits Completos</Link></li>
+              <li><Link href="/categorias/capsulas-de-lavanderia" className="hover:text-teal transition-colors">Cápsulas de Lavanderia</Link></li>
               <li><Link href="/categorias/saches-e-perfumadores" className="hover:text-teal transition-colors">Sachês e Perfumadores</Link></li>
             </ul>
           </div>
