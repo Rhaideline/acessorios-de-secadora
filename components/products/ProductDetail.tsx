@@ -7,7 +7,8 @@ import { formatPrice } from '@/lib/ghl'
 import Button from '@/components/ui/Button'
 import Badge from '@/components/ui/Badge'
 import StarRating from '@/components/ui/StarRating'
-import { ShoppingCart, Zap, Minus, Plus, ChevronLeft, ChevronRight } from 'lucide-react'
+import { useCart } from '@/contexts/CartContext'
+import { ShoppingCart, Zap, Minus, Plus, ChevronLeft, ChevronRight, Check } from 'lucide-react'
 
 interface ProductDetailProps {
   product: SiteProduct
@@ -17,6 +18,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [quantity, setQuantity] = useState(1)
   const [activeTab, setActiveTab] = useState('descricao')
+  const [addedToCart, setAddedToCart] = useState(false)
+  const { addItem } = useCart()
+
+  const handleAddToCart = () => {
+    addItem(product, quantity)
+    setAddedToCart(true)
+    setTimeout(() => setAddedToCart(false), 2000)
+  }
 
   const tabs = [
     { id: 'descricao', label: 'Descrição' },
@@ -150,8 +159,20 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <Button size="lg" className="flex-1 gap-2">
-              <ShoppingCart size={20} /> Adicionar ao Carrinho
+            <Button
+              size="lg"
+              className={`flex-1 gap-2 ${addedToCart ? 'bg-green-500 hover:bg-green-500' : ''}`}
+              onClick={handleAddToCart}
+            >
+              {addedToCart ? (
+                <>
+                  <Check size={20} /> Adicionado!
+                </>
+              ) : (
+                <>
+                  <ShoppingCart size={20} /> Adicionar ao Carrinho
+                </>
+              )}
             </Button>
             {product.checkoutUrl ? (
               <a href={product.checkoutUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
@@ -160,7 +181,15 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 </Button>
               </a>
             ) : (
-              <Button size="lg" variant="outline" className="flex-1 gap-2">
+              <Button
+                size="lg"
+                variant="outline"
+                className="flex-1 gap-2"
+                onClick={() => {
+                  addItem(product, quantity)
+                  window.location.href = '/checkout'
+                }}
+              >
                 <Zap size={20} /> Comprar Agora
               </Button>
             )}

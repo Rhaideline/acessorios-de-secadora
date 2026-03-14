@@ -4,6 +4,8 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/layout/WhatsAppButton'
+import CartDrawer from '@/components/cart/CartDrawer'
+import { CartProvider } from '@/contexts/CartContext'
 import {
   generateOrganizationJsonLd,
   generateWebsiteJsonLd,
@@ -99,10 +101,13 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body text-text-dark antialiased">
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <CartProvider>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+          <CartDrawer />
+        </CartProvider>
       </body>
     </html>
   )

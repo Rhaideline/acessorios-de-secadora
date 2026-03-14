@@ -7,55 +7,56 @@ import { formatPrice } from '@/lib/ghl'
 import Badge from '@/components/ui/Badge'
 import StarRating from '@/components/ui/StarRating'
 import { ShoppingCart } from 'lucide-react'
+import { useCart } from '@/contexts/CartContext'
 
 interface ProductCardProps {
   product: SiteProduct
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const { addItem } = useCart()
+
   return (
-    <Link
-      href={`/produtos/${product.slug}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border-color flex flex-col"
-    >
+    <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border-color flex flex-col">
       {/* Image */}
-      <div className="relative aspect-square overflow-hidden bg-surface">
-        <Image
-          src={product.images[0]?.url || '/images/placeholder.jpg'}
-          alt={product.images[0]?.alt || product.name}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-        />
+      <Link href={`/produtos/${product.slug}`} className="block">
+        <div className="relative aspect-square overflow-hidden bg-surface">
+          <Image
+            src={product.images[0]?.url || '/images/placeholder.jpg'}
+            alt={product.images[0]?.alt || product.name}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          />
 
-        {/* Badges */}
-        <div className="absolute top-3 left-3 flex flex-col gap-1.5">
-          {product.isBestseller && <Badge variant="bestseller">Mais Vendido</Badge>}
-          {product.isNew && <Badge variant="new">Novo</Badge>}
-          {product.isOnSale && product.discount && (
-            <Badge variant="sale">-{product.discount}%</Badge>
-          )}
-        </div>
+          {/* Badges */}
+          <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+            {product.isBestseller && <Badge variant="bestseller">Mais Vendido</Badge>}
+            {product.isNew && <Badge variant="new">Novo</Badge>}
+            {product.isOnSale && product.discount && (
+              <Badge variant="sale">-{product.discount}%</Badge>
+            )}
+          </div>
 
-        {/* Quick buy */}
-        {product.checkoutUrl && (
+          {/* Quick add to cart */}
           <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-            <a
-              href={product.checkoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              aria-label={`Comprar ${product.name}`}
+            <button
+              onClick={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                addItem(product)
+              }}
+              aria-label={`Adicionar ${product.name} ao carrinho`}
               className="bg-teal text-white p-3 rounded-full shadow-lg hover:bg-teal/90 transition-colors block"
             >
               <ShoppingCart size={18} />
-            </a>
+            </button>
           </div>
-        )}
-      </div>
+        </div>
+      </Link>
 
       {/* Info */}
-      <div className="p-4 flex flex-col flex-1">
+      <Link href={`/produtos/${product.slug}`} className="p-4 flex flex-col flex-1">
         <div className="mb-2">
           <StarRating rating={5} size={14} />
         </div>
@@ -77,7 +78,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             Últimas {product.inventory} unidades!
           </p>
         )}
-      </div>
-    </Link>
+      </Link>
+    </div>
   )
 }
