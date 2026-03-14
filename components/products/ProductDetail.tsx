@@ -150,12 +150,27 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <Button size="lg" className="flex-1 gap-2">
-              <ShoppingCart size={20} /> Adicionar ao Carrinho
-            </Button>
-            <Button size="lg" variant="outline" className="flex-1 gap-2">
-              <Zap size={20} /> Comprar Agora
-            </Button>
+            {product.checkoutUrl ? (
+              <a href={product.checkoutUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button size="lg" className="w-full gap-2">
+                  <ShoppingCart size={20} /> Comprar Agora
+                </Button>
+              </a>
+            ) : (
+              <Button size="lg" className="flex-1 gap-2">
+                <ShoppingCart size={20} /> Comprar Agora
+              </Button>
+            )}
+            <a
+              href={`https://wa.me/5511999999999?text=Olá! Quero comprar: ${encodeURIComponent(product.name)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1"
+            >
+              <Button size="lg" variant="outline" className="w-full gap-2">
+                <Zap size={20} /> Comprar via WhatsApp
+              </Button>
+            </a>
           </div>
 
           {/* Trust */}

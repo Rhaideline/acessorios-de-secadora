@@ -34,7 +34,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="https://assets.cdn.filesafe.space/MR3yMqtdBa4732pi4ZCw/media/69b59c5b395ff47c62392516.png"
+                src="https://assets.cdn.filesafe.space/MR3yMqtdBa4732pi4ZCw/media/69b5c77fb5f3d46f5aaf7f43.png"
                 alt="Acessórios de Secadora"
                 width={180}
                 height={40}

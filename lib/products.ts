@@ -4,6 +4,7 @@ import { SiteProduct, BlogPost, Testimonial, Category } from '@/types/product'
 export const FALLBACK_PRODUCTS: SiteProduct[] = [
   {
     id: '1',
+    ghlProductId: '69b5d1b7632fe5b1e0181473',
     name: 'Lenços Aromatizados para Secadora — 120 Folhas',
     slug: 'lencos-aromatizados-secadora-120',
     description:
@@ -27,11 +28,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: true,
     isNew: false,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d1b7632fe5b1e0181473',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
   {
     id: '2',
+    ghlProductId: '69b5d22c6601ec31533861c2',
     name: 'Bolas de Lã Orgânica para Secadora — Kit 3un XL',
     slug: 'bolas-la-organica-secadora-kit-3',
     description:
@@ -55,11 +58,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: true,
     isNew: false,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d22c6601ec31533861c2',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
   {
     id: '3',
+    ghlProductId: '69b5d22cc673108f73b1ec96',
     name: 'Lenços para Secadora Sem Perfume — 120un Hipoalergênico',
     slug: 'lencos-secadora-sem-perfume-120',
     description:
@@ -79,11 +84,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: false,
     isNew: false,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d22cc673108f73b1ec96',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
   {
     id: '4',
+    ghlProductId: '69b5d22ccc137271a1917edb',
     name: 'Kit Starter Lavanderia Importada — Combo Completo',
     slug: 'kit-starter-lavanderia',
     description:
@@ -103,11 +110,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: true,
     isNew: false,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d22ccc137271a1917edb',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
   {
     id: '5',
+    ghlProductId: '69b5d22de32f823e8158df79',
     name: 'Sachê Perfumado para Armário — Lavanda Francesa',
     slug: 'sache-perfumado-lavanda-francesa',
     description:
@@ -126,11 +135,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: false,
     isNew: true,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d22de32f823e8158df79',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
   {
     id: '6',
+    ghlProductId: '69b5d22d8b341a488c724548',
     name: 'Lenços para Secadora Lavanda — 80un Premium',
     slug: 'lencos-secadora-lavanda-80',
     description:
@@ -150,11 +161,13 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: false,
     isNew: true,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d22d8b341a488c724548',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },
   {
     id: '7',
+    ghlProductId: '69b5d230632fe53a151821c6',
     name: 'Lenços Amaciantes Ultra Macios para Secadora — 120 Folhas Perfume Fresco',
     slug: 'lencos-amaciantes-ultra-macios-120',
     description:
@@ -178,6 +191,7 @@ export const FALLBACK_PRODUCTS: SiteProduct[] = [
     isBestseller: true,
     isNew: true,
     isOnSale: true,
+    checkoutUrl: 'https://checkout.acessoriosdesecadora.com.br/69b5d230632fe53a151821c6',
     createdAt: '2025-01-01',
     updatedAt: '2025-01-01',
   },

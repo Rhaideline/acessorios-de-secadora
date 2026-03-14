@@ -37,18 +37,21 @@ export default function ProductCard({ product }: ProductCardProps) {
           )}
         </div>
 
-        {/* Quick add */}
-        <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-          <button
-            onClick={(e) => {
-              e.preventDefault()
-              // TODO: add to cart
-            }}
-            className="bg-teal text-white p-3 rounded-full shadow-lg hover:bg-teal/90 transition-colors"
-          >
-            <ShoppingCart size={18} />
-          </button>
-        </div>
+        {/* Quick buy */}
+        {product.checkoutUrl && (
+          <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+            <a
+              href={product.checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              aria-label={`Comprar ${product.name}`}
+              className="bg-teal text-white p-3 rounded-full shadow-lg hover:bg-teal/90 transition-colors block"
+            >
+              <ShoppingCart size={18} />
+            </a>
+          </div>
+        )}
       </div>
 
       {/* Info */}

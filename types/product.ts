@@ -27,6 +27,7 @@ export interface GHLVariant {
 
 export interface SiteProduct {
   id: string
+  ghlProductId?: string
   name: string
   slug: string
   description: string
@@ -42,6 +43,7 @@ export interface SiteProduct {
   isBestseller: boolean
   isNew: boolean
   isOnSale: boolean
+  checkoutUrl?: string
   createdAt: string
   updatedAt: string
 }
