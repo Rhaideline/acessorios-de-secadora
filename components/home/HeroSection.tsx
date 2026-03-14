@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url(https://images.pexels.com/photos/6186814/pexels-photo-6186814.jpeg)',
+            'url(https://images.pexels.com/photos/7614539/pexels-photo-7614539.jpeg?auto=compress&cs=tinysrgb&w=1920)',
         }}
       />
       {/* Overlay */}
