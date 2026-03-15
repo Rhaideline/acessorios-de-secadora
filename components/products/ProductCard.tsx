@@ -7,15 +7,12 @@ import { formatPrice } from '@/lib/ghl'
 import Badge from '@/components/ui/Badge'
 import StarRating from '@/components/ui/StarRating'
 import { ShoppingCart } from 'lucide-react'
-import { useCart } from '@/contexts/CartContext'
 
 interface ProductCardProps {
   product: SiteProduct
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const { addItem } = useCart()
-
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border-color flex flex-col">
       {/* Image */}
@@ -38,19 +35,16 @@ export default function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
 
-          {/* Quick add to cart */}
+          {/* Quick buy */}
           <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-            <button
-              onClick={(e) => {
-                e.preventDefault()
-                e.stopPropagation()
-                addItem(product)
-              }}
-              aria-label={`Adicionar ${product.name} ao carrinho`}
+            <a
+              href="https://loja.acessoriosdesecadora.com.br/products-list"
+              onClick={(e) => e.stopPropagation()}
+              aria-label={`Comprar ${product.name}`}
               className="bg-teal text-white p-3 rounded-full shadow-lg hover:bg-teal/90 transition-colors block"
             >
               <ShoppingCart size={18} />
-            </button>
+            </a>
           </div>
         </div>
       </Link>

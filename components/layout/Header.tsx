@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { ShoppingCart, Menu, X } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import MobileMenu from './MobileMenu'
-import { useCart } from '@/contexts/CartContext'
 
 const navLinks = [
   { label: 'Início', href: '/' },
@@ -18,8 +17,6 @@ const navLinks = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const { totalItems, openCart } = useCart()
-
   return (
     <>
       {/* Top bar */}
@@ -66,18 +63,13 @@ export default function Header() {
                 </Button>
               </Link>
 
-              <button
-                onClick={openCart}
+              <a
+                href="https://loja.acessoriosdesecadora.com.br/cart"
                 className="text-white relative p-2"
-                aria-label="Abrir carrinho"
+                aria-label="Ver carrinho"
               >
                 <ShoppingCart size={22} />
-                {totalItems > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-teal text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
-                    {totalItems > 99 ? '99+' : totalItems}
-                  </span>
-                )}
-              </button>
+              </a>
 
               {/* Mobile menu toggle */}
               <button
