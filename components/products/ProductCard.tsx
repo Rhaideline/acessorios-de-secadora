@@ -38,7 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* Quick buy */}
           <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
             <a
-              href="https://loja.acessoriosdesecadora.com.br/products-list"
+              href={`https://loja.acessoriosdesecadora.com.br/product-details/${product.ghlProductId}`}
               onClick={(e) => e.stopPropagation()}
               aria-label={`Comprar ${product.name}`}
               className="bg-teal text-white p-3 rounded-full shadow-lg hover:bg-teal/90 transition-colors block"

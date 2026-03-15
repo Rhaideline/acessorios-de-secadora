@@ -143,12 +143,12 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <a href="https://loja.acessoriosdesecadora.com.br/products-list" className="flex-1">
+            <a href={`https://loja.acessoriosdesecadora.com.br/product-details/${product.ghlProductId}`} className="flex-1">
               <Button size="lg" className="w-full gap-2">
                 <ShoppingCart size={20} /> Adicionar ao Carrinho
               </Button>
             </a>
-            <a href="https://loja.acessoriosdesecadora.com.br/products-list" className="flex-1">
+            <a href={`https://loja.acessoriosdesecadora.com.br/product-details/${product.ghlProductId}`} className="flex-1">
               <Button size="lg" variant="outline" className="w-full gap-2">
                 <Zap size={20} /> Comprar Agora
               </Button>
