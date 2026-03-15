@@ -53,7 +53,7 @@ export default function HeroSection() {
               <Lock size={14} className="text-teal" /> Pagamento Seguro
             </span>
             <span className="flex items-center gap-1.5">
-              <Package size={14} className="text-teal" /> Frete para todo Brasil
+              <Package size={14} className="text-teal" /> Entrega em até 15 dias
             </span>
             <span className="flex items-center gap-1.5">
               <Star size={14} className="text-teal" /> 4.9/5 de avaliação

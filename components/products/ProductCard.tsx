@@ -73,11 +73,6 @@ export default function ProductCard({ product }: ProductCardProps) {
             </span>
           )}
         </div>
-        {product.inventory !== undefined && product.inventory < 5 && product.inventory > 0 && (
-          <p className="text-red-500 text-xs mt-1 font-body font-medium">
-            Últimas {product.inventory} unidades!
-          </p>
-        )}
       </Link>
     </div>
   )

@@ -131,12 +131,6 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             {product.description}
           </p>
 
-          {product.inventory !== undefined && product.inventory < 5 && product.inventory > 0 && (
-            <p className="text-red-500 font-body font-semibold text-sm mb-4">
-              Últimas {product.inventory} unidades em estoque!
-            </p>
-          )}
-
           {/* Quantity selector */}
           <div className="flex items-center gap-4 mb-6">
             <span className="font-body font-medium text-sm">Quantidade:</span>
@@ -200,6 +194,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <p>✓ Frete grátis acima de R$ 199</p>
             <p>✓ Parcele em até 12x sem juros</p>
             <p>✓ Produto importado original</p>
+            <p>✓ Prazo de entrega: até 15 dias úteis</p>
             <p>✓ Troca ou devolução em até 30 dias</p>
           </div>
         </div>

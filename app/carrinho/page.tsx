@@ -176,6 +176,7 @@ export default function CarrinhoPage() {
             <div className="mt-4 space-y-1.5 text-xs font-body text-text-muted">
               <p>✓ Pagamento seguro via Pix, cartão ou boleto</p>
               <p>✓ Parcele em até 12x sem juros</p>
+              <p>✓ Prazo de entrega: até 15 dias úteis</p>
               <p>✓ Troca ou devolução em até 30 dias</p>
             </div>
           </div>
