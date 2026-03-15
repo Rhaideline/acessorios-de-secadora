@@ -167,11 +167,11 @@ export default function CarrinhoPage() {
               </div>
             </div>
 
-            <Link href="/checkout" className="block">
+            <a href="https://loja.acessoriosdesecadora.com.br/checkout" className="block">
               <Button size="lg" className="w-full">
                 Finalizar Compra
               </Button>
-            </Link>
+            </a>
 
             <div className="mt-4 space-y-1.5 text-xs font-body text-text-muted">
               <p>✓ Pagamento seguro via Pix, cartão ou boleto</p>

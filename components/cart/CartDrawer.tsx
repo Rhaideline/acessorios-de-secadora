@@ -149,11 +149,11 @@ export default function CartDrawer() {
 
             {/* Actions */}
             <div className="space-y-2">
-              <Link href="/checkout" onClick={closeCart} className="block">
+              <a href="https://loja.acessoriosdesecadora.com.br/checkout" onClick={closeCart} className="block">
                 <Button size="lg" className="w-full">
                   Finalizar Compra
                 </Button>
-              </Link>
+              </a>
               <Link href="/carrinho" onClick={closeCart} className="block">
                 <Button size="lg" variant="outline" className="w-full">
                   Ver Carrinho

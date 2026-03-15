@@ -168,25 +168,11 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 </>
               )}
             </Button>
-            {product.checkoutUrl ? (
-              <a href={product.checkoutUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
-                <Button size="lg" variant="outline" className="w-full gap-2">
-                  <Zap size={20} /> Comprar Agora
-                </Button>
-              </a>
-            ) : (
-              <Button
-                size="lg"
-                variant="outline"
-                className="flex-1 gap-2"
-                onClick={() => {
-                  addItem(product, quantity)
-                  window.location.href = '/checkout'
-                }}
-              >
+            <a href="https://loja.acessoriosdesecadora.com.br/products-list" className="flex-1">
+              <Button size="lg" variant="outline" className="w-full gap-2">
                 <Zap size={20} /> Comprar Agora
               </Button>
-            )}
+            </a>
           </div>
 
           {/* Trust */}

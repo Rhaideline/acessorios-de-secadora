@@ -73,15 +73,9 @@ export default function CheckoutPage() {
       `*Total:* ${formatPrice(total)}\n\n` +
       `*Pagamento:* ${paymentLabel}`
 
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`
-
-    // Also try GHL checkout if products have checkout URLs and only 1 item
-    if (items.length === 1 && items[0].product.checkoutUrl) {
-      const checkoutUrl = `${items[0].product.checkoutUrl}?firstName=${encodeURIComponent(formData.nome.split(' ')[0])}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.telefone)}`
-      window.open(checkoutUrl, '_blank')
-    } else {
-      window.open(whatsappUrl, '_blank')
-    }
+    // Redirect to GHL store checkout
+    const ghlCheckoutUrl = `https://loja.acessoriosdesecadora.com.br/checkout?firstName=${encodeURIComponent(formData.nome.split(' ')[0])}&lastName=${encodeURIComponent(formData.nome.split(' ').slice(1).join(' '))}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.telefone)}`
+    window.location.href = ghlCheckoutUrl
 
     setSubmitted(true)
     clearCart()
